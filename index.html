@@ -388,7 +388,9 @@
         <button class="text-gray-500" onclick="closeModal()" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
       </div>
 
-      <form id="orderForm" class="mt-4 space-y-3" onsubmit="submitOrder(event)">
+      <form action="https://api.web3forms.com/submit" method="POST" id="orderForm" class="mt-4 space-y-3">
+    <input type="hidden" name="access_key" value="e783406d-26ef-4814-8663-71dfa8814850">
+    <input type="hidden" name="subject" value="New Order - The Elite Grow">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <input required id="fullName" name="fullName" placeholder="Full Name" class="w-full p-3 border rounded-md" />
           <input required id="phone" name="phone" placeholder="Phone / WhatsApp" class="w-full p-3 border rounded-md" />
