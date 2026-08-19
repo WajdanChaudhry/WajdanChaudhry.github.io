@@ -1,27 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>THE ELITE GROW — Natural Height Enhancement</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>THE ELITE GROW — Premium Height Enhancement Powder in Pakistan</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CDN -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            navy: '#0F172A',
-            emerald: '#10B981',
-            gold: '#F59E0B',
-            slatebg: '#F8FAFC'
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            },
+            accent: {
+              500: '#f59e0b',
+              600: '#d97706',
+            },
+            dark: {
+              900: '#0b0f17',
+              800: '#111827',
+              700: '#1f2937',
+              600: '#374151',
+            }
           },
           fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui']
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
           }
         }
       }
@@ -32,353 +50,736 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-    body { background-color: #F8FAFC; }
-    .glass { background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.7)); backdrop-filter: blur(6px); }
-    .gold-cta { background: #F59E0B; color: #0F172A; }
-    @media(min-width: 768px) { .mobile-cta { display: none; } }
-    @media(max-width: 767px) { .desktop-cta { display: none; } }
-    
-    /* Floating WhatsApp Button */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 80px;
-      right: 20px;
-      background-color: #25d366;
-      color: #FFF;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-      z-index: 100;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(229, 231, 235, 0.8);
     }
-    .whatsapp-float:hover {
-      background-color: #128c7e;
+    .gradient-text {
+      background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .pulse-glow {
+      box-shadow: 0 0 25px rgba(34, 197, 94, 0.35);
+    }
+    .floating-wa {
+      animation: pulse-border 2s infinite;
+    }
+    @keyframes pulse-border {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
     }
   </style>
 </head>
-<body class="font-sans text-navy">
+<body class="font-sans bg-slate-50 text-dark-800 antialiased selection:bg-brand-500 selection:text-white pb-20 md:pb-0">
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/923398033003?text=Hi%2C%20I%20want%20to%20order%20The%20Elite%20Grow" class="whatsapp-float" target="_blank" aria-label="WhatsApp Us">
-    <i class="fa-brands fa-whatsapp"></i>
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/923398033003?text=Salam!%20I%20want%20to%20order%20The%20Elite%20Grow%20Height%20Powder." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="floating-wa fixed bottom-20 right-5 md:bottom-8 md:right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform duration-300 group"
+     aria-label="Contact on WhatsApp">
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 ease-in-out pl-0 group-hover:pl-2 font-bold text-sm">Chat with Us</span>
   </a>
 
   <!-- TOP ANNOUNCEMENT BAR -->
-  <div class="w-full bg-gradient-to-r from-emerald/95 to-navy/85 text-white">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-between py-2 text-sm">
-      <div class="flex items-center gap-3">
-        <span class="text-lg">🔥</span>
-        <span class="font-semibold">FLASH SALE:</span>
-        <span>FREE SHIPPING ALL OVER PAKISTAN TODAY ONLY!</span>
-      </div>
+  <div class="bg-gradient-to-r from-dark-900 via-brand-900 to-dark-900 text-white text-xs md:text-sm font-medium py-2.5 px-4 sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
       <div class="flex items-center gap-2">
-        <span class="text-xs opacity-90">Offer ends in</span>
-        <div id="top-timer" class="font-mono bg-white/10 px-3 py-1 rounded-md">14:59</div>
+        <span class="bg-amber-500 text-dark-900 font-extrabold px-2 py-0.5 rounded text-[10px] uppercase tracking-wider">Limited Offer</span>
+        <span>🔥 <strong>FLASH SALE:</strong> Up to 45% OFF + <strong>FREE Home Delivery</strong> across Pakistan!</span>
+      </div>
+      <div class="flex items-center gap-2 text-amber-400 font-mono text-xs">
+        <i class="fa-regular fa-clock"></i>
+        <span>Offer Ends In:</span>
+        <span id="countdown" class="bg-white/10 px-2 py-0.5 rounded font-bold text-white">14:59</span>
       </div>
     </div>
   </div>
 
-  <!-- HEADER / NAV -->
-  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur glass border-b border-gray-200">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-between py-3">
-      <a href="#hero" class="flex items-center gap-3">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" class="text-emerald">
-          <rect width="24" height="24" rx="6" fill="#0F172A"></rect>
-          <path d="M6 14l3-4 3 2 3-6 3 10" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
+  <!-- NAVIGATION -->
+  <header class="bg-white/90 backdrop-blur-md sticky top-[37px] sm:top-[33px] z-40 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5 group">
+        <div class="w-10 h-10 bg-gradient-to-tr from-brand-700 to-brand-500 rounded-xl flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-bolt text-lg"></i>
+        </div>
         <div>
-          <div class="text-navy font-extrabold tracking-tight text-lg">THE ELITE GROW</div>
-          <div class="text-xs text-gray-500 -mt-0.5">Premium Height Nutrition Powder</div>
+          <span class="font-display font-extrabold text-xl tracking-tight text-dark-900 block leading-none">THE ELITE GROW</span>
+          <span class="text-[10px] font-bold tracking-widest text-brand-600 uppercase">Height Nutrition Formula</span>
         </div>
       </a>
 
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
-        <a href="#benefits" class="hover:text-navy">Benefits</a>
-        <a href="#how" class="hover:text-navy">How It Works</a>
-        <a href="#packages" class="hover:text-navy">Packages</a>
-        <a href="#reviews" class="hover:text-navy">Reviews</a>
-        <a href="#faqs" class="hover:text-navy">FAQs</a>
-        <button class="desktop-cta ml-3 gold-cta px-4 py-2 rounded-md shadow font-bold" onclick="openModal('Growth Accelerator')">
-          Order Now
-        </button>
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#benefits" class="hover:text-brand-600 transition-colors">Benefits</a>
+        <a href="#formula" class="hover:text-brand-600 transition-colors">How Powder Works</a>
+        <a href="#packages" class="hover:text-brand-600 transition-colors">Pricing & Packages</a>
+        <a href="#reviews" class="hover:text-brand-600 transition-colors">Reviews</a>
+        <a href="#faqs" class="hover:text-brand-600 transition-colors">FAQs</a>
       </nav>
 
-      <div class="md:hidden flex items-center gap-2">
-        <button class="p-2 text-gray-600" id="mobileNavBtn" aria-label="Open menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="#packages" class="bg-brand-600 hover:bg-brand-700 text-white font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-brand-500/20 hover:shadow-brand-500/40 transition-all text-sm flex items-center gap-2">
+          <i class="fa-solid fa-cart-shopping"></i> Order Now
+        </a>
       </div>
+
+      <!-- Mobile Nav Toggle -->
+      <button id="menuBtn" class="md:hidden text-slate-700 text-2xl p-1 focus:outline-none" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
 
-    <div id="mobileNav" class="hidden md:hidden border-t border-gray-100">
-      <div class="px-4 pb-4 pt-2 space-y-2">
-        <a href="#benefits" class="block py-2">Benefits</a>
-        <a href="#how" class="block py-2">How It Works</a>
-        <a href="#packages" class="block py-2">Packages</a>
-        <a href="#reviews" class="block py-2">Reviews</a>
-        <a href="#faqs" class="block py-2">FAQs</a>
-        <button class="w-full gold-cta px-4 py-2 rounded-md font-bold" onclick="openModal('Growth Accelerator')">Order Now</button>
-      </div>
+    <!-- Mobile Menu Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-3">
+      <a href="#benefits" class="block font-medium text-slate-700 hover:text-brand-600 py-1">Benefits</a>
+      <a href="#formula" class="block font-medium text-slate-700 hover:text-brand-600 py-1">How Powder Works</a>
+      <a href="#packages" class="block font-medium text-slate-700 hover:text-brand-600 py-1">Pricing & Packages</a>
+      <a href="#reviews" class="block font-medium text-slate-700 hover:text-brand-600 py-1">Reviews</a>
+      <a href="#faqs" class="block font-medium text-slate-700 hover:text-brand-600 py-1">FAQs</a>
+      <a href="#packages" class="block text-center bg-brand-600 text-white font-bold py-2.5 rounded-xl">Order Now</a>
     </div>
   </header>
 
-  <!-- HERO -->
-  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-8" id="hero">
-    <section class="bg-white rounded-2xl shadow-lg p-6 md:p-10 grid gap-6 md:grid-cols-2 items-center">
-      <div>
-        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight text-navy">
-          Unlock Your Maximum Height Potential Naturally & Safely
-        </h1>
-        <p class="mt-3 text-gray-600 sm:text-lg">
-          Scientifically formulated height enhancement powder with essential bone-density nutrients to support natural growth at any age.
-        </p>
-
-        <div class="mt-5 flex flex-wrap gap-3">
-          <span class="px-3 py-1 bg-emerald/10 text-emerald rounded-full text-sm font-semibold flex items-center gap-2">
-            <i class="fa-solid fa-leaf"></i> 100% Natural & Safe
-          </span>
-          <span class="px-3 py-1 bg-navy/5 text-navy rounded-full text-sm font-semibold flex items-center gap-2">
-            <i class="fa-solid fa-flask"></i> Clinical Grade Ingredients
-          </span>
-          <span class="px-3 py-1 bg-navy/5 text-navy rounded-full text-sm font-semibold flex items-center gap-2">
-            <i class="fa-solid fa-star"></i> 94.8% Customer Satisfaction
-          </span>
-        </div>
-
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#packages" class="inline-flex items-center justify-center gold-cta px-5 py-3 rounded-md font-bold shadow hover:scale-[1.01]">Claim Your Discounted Supply</a>
-          <a href="#reviews" class="inline-flex items-center gap-2 px-4 py-3 border rounded-md text-navy bg-white/80 hover:bg-gray-50 font-semibold">See Real Results</a>
-        </div>
-
-        <div class="mt-6 grid grid-cols-2 gap-3">
-          <div class="p-3 bg-navy text-white rounded-lg flex items-center gap-3">
-            <div class="p-2 bg-white/10 rounded-md">
-              <i class="fa-solid fa-arrow-up text-emerald"></i>
-            </div>
-            <div>
-              <div class="text-xs opacity-80">Growth Support</div>
-              <div class="font-bold text-lg">+2 to +4 Inches</div>
-            </div>
+  <!-- HERO SECTION -->
+  <section class="relative pt-8 pb-16 md:py-20 overflow-hidden bg-gradient-to-b from-slate-100 via-white to-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 bg-brand-50 border border-brand-200 text-brand-800 text-xs md:text-sm font-bold px-3.5 py-1.5 rounded-full">
+            <i class="fa-solid fa-certificate text-brand-600"></i>
+            100% Pure Organic Powder — No Side Effects
           </div>
 
-          <div class="p-3 bg-white border rounded-lg flex items-center gap-3">
-            <div class="p-2 bg-emerald/10 rounded-md">
-              <i class="fa-solid fa-users text-emerald"></i>
+          <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-dark-900 leading-tight">
+            Increase Your Height Naturally With <span class="gradient-text">Premium Growth Powder</span>
+          </h1>
+
+          <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Formulated with natural bone-density nutrients, amino acids, and essential minerals. Just <strong>1 scoop daily in milk</strong> activates cartilage growth plates and supports 2–4 inches natural height increase.
+          </p>
+
+          <!-- Key Highlights Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-left">
+            <div class="p-3 bg-white border border-slate-200 rounded-xl flex items-center gap-3 shadow-sm">
+              <i class="fa-solid fa-jar text-brand-600 text-2xl"></i>
+              <div>
+                <div class="text-xs text-slate-500 font-semibold">Form Factor</div>
+                <div class="text-sm font-bold text-dark-900">3D Jar Powder</div>
+              </div>
             </div>
-            <div>
-              <div class="text-xs opacity-80">Trusted By</div>
-              <div class="font-bold text-lg">15,000+ Customers</div>
+            <div class="p-3 bg-white border border-slate-200 rounded-xl flex items-center gap-3 shadow-sm">
+              <i class="fa-solid fa-truck-fast text-brand-600 text-2xl"></i>
+              <div>
+                <div class="text-xs text-slate-500 font-semibold">Delivery</div>
+                <div class="text-sm font-bold text-dark-900">Free COD All Pak</div>
+              </div>
+            </div>
+            <div class="p-3 bg-white border border-slate-200 rounded-xl flex items-center gap-3 shadow-sm col-span-2 sm:col-span-1">
+              <i class="fa-solid fa-shield-halved text-brand-600 text-2xl"></i>
+              <div>
+                <div class="text-xs text-slate-500 font-semibold">Quality</div>
+                <div class="text-sm font-bold text-dark-900">100% Safe Formula</div>
+              </div>
             </div>
           </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#packages" class="w-full sm:w-auto bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl shadow-brand-500/25 hover:scale-105 transition-all text-center text-base">
+              Order Your Jar Now — PKR 1,999
+            </a>
+            <a href="https://wa.me/923398033003?text=Salam!%20I%20have%20questions%20about%20The%20Elite%20Grow" target="_blank" class="w-full sm:w-auto bg-white border-2 border-slate-300 hover:border-brand-500 text-slate-800 font-bold px-6 py-4 rounded-xl hover:bg-slate-50 transition-all text-center text-base flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-emerald-500 text-xl"></i> Ask on WhatsApp
+            </a>
+          </div>
+
+          <!-- Trust Bar -->
+          <div class="pt-4 flex items-center justify-center lg:justify-start gap-6 text-xs text-slate-500 font-semibold">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-600"></i> Cash on Delivery</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-600"></i> JazzCash Accepted</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-brand-600"></i> 15,000+ Happy Users</span>
+          </div>
         </div>
+
+        <!-- Right 3D Visual Jar Mockup -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md">
+            <!-- Decorative Glow Background -->
+            <div class="absolute -inset-4 bg-gradient-to-r from-brand-500 to-emerald-400 rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
+
+            <div class="relative bg-white border border-slate-200 p-8 rounded-3xl shadow-2xl text-center space-y-6">
+              <div class="inline-block bg-amber-100 text-amber-800 font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider">
+                Official 3D Jar Container
+              </div>
+
+              <!-- Jar Illustration Box -->
+              <div class="w-48 h-60 mx-auto bg-gradient-to-b from-slate-900 to-slate-800 rounded-2xl p-4 shadow-2xl flex flex-col items-center justify-between relative border-2 border-brand-500/40">
+                <!-- Jar Lid -->
+                <div class="w-36 h-8 bg-gradient-to-r from-amber-500 to-amber-400 rounded-md border-b-2 border-amber-600 shadow-md flex items-center justify-center text-dark-900 font-black text-[10px] uppercase">
+                  SEALED FOR FRESHNESS
+                </div>
+                
+                <!-- Label Area -->
+                <div class="w-full bg-slate-950/80 border border-brand-500/30 rounded-xl p-3 text-center my-auto">
+                  <i class="fa-solid fa-bolt text-brand-500 text-3xl mb-1"></i>
+                  <div class="font-display font-black text-white text-base tracking-wider">ELITE GROW</div>
+                  <div class="text-[9px] text-brand-400 font-bold uppercase tracking-widest">Height Growth Powder</div>
+                  <div class="mt-2 bg-brand-500/20 text-brand-300 text-[8px] py-0.5 rounded font-mono">NET WT. 400G (1 MONTH)</div>
+                </div>
+
+                <!-- Scoop Banner -->
+                <div class="text-[10px] text-slate-300 font-semibold flex items-center gap-1">
+                  <i class="fa-solid fa-utensils text-amber-400"></i> 1 Scoop + Warm Milk Daily
+                </div>
+              </div>
+
+              <div class="space-y-1">
+                <h3 class="font-bold text-slate-900 text-lg">Pure Height Supplement Powder</h3>
+                <p class="text-xs text-slate-500">Delicious Chocolate / Vanilla Natural Taste • Easy to Mix</p>
+              </div>
+
+              <div class="bg-slate-50 rounded-xl p-3 flex items-center justify-around text-center border border-slate-100">
+                <div>
+                  <div class="text-xs text-slate-400">Regular Price</div>
+                  <div class="text-sm font-bold text-slate-400 line-through">PKR 3,000</div>
+                </div>
+                <div class="h-8 w-px bg-slate-200"></div>
+                <div>
+                  <div class="text-xs text-brand-600 font-bold">Offer Price</div>
+                  <div class="text-xl font-extrabold text-brand-700">PKR 1,999</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS & COMPARISON SECTION -->
+  <section id="benefits" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <span class="text-brand-600 font-extrabold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full">Why Choose The Powder Form?</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-bold text-dark-900">Designed For Maximum Bone Nutrient Absorption</h2>
+        <p class="text-slate-600 text-sm sm:text-base">Unlike hard pills or capsules that pass unabsorbed, powdered nutrients dissolve instantly in milk for 3x faster cellular uptake.</p>
       </div>
 
-      <!-- Hero 3D Jar Visual -->
-      <div class="flex items-center justify-center">
-        <div class="w-full max-w-sm p-6 rounded-xl border border-gray-100 bg-gradient-to-b from-white to-slatebg text-center">
-          <div class="w-full h-48 bg-navy/5 rounded-xl flex flex-col items-center justify-center p-4 border border-emerald/20">
-             <i class="fa-solid fa-jar text-6xl text-emerald mb-2"></i>
-             <div class="font-bold text-navy text-lg">3D Powder Jar Render</div>
-             <p class="text-xs text-gray-500 mt-1">Premium Height Growth Formula Powder</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3 hover:border-brand-500 transition-colors">
+          <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center text-2xl font-bold">
+            <i class="fa-solid fa-bone"></i>
           </div>
-          <div class="mt-4 text-sm text-gray-600 font-semibold">1 Scoop Daily with Milk for Fast Results</div>
+          <h3 class="font-bold text-lg text-slate-900">Growth Plate Activation</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Nourishes the epiphyseal cartilage plates in spinal discs and leg bones to support micro-lengthening.</p>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <!-- PRICING & PACKAGES -->
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 pb-12" id="packages">
-    <h2 class="text-center font-extrabold text-2xl text-navy mb-6">Pricing & Bundle Packages</h2>
-
-    <div class="grid gap-6 md:grid-cols-3">
-      <!-- Pack 1 -->
-      <div class="bg-white p-6 rounded-2xl border shadow-sm flex flex-col">
-        <div class="flex items-center justify-between">
-          <div>
-            <h3 class="font-bold text-lg">Starter Jar</h3>
-            <p class="text-sm text-gray-500">1 Month Powder Jar Supply</p>
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3 hover:border-brand-500 transition-colors">
+          <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center text-2xl font-bold">
+            <i class="fa-solid fa-cubes-stacked"></i>
           </div>
-          <div class="text-right">
-            <div class="text-xs text-gray-400 line-through">PKR 3,000</div>
-            <div class="text-2xl font-extrabold text-navy">PKR 1,999</div>
+          <h3 class="font-bold text-lg text-slate-900">Dense Bone Mineral Matrix</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Packed with Calcium Citrate, Vitamin D3, K2, and Zinc to strengthen bone density and prevent curvature.</p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3 hover:border-brand-500 transition-colors">
+          <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center text-2xl font-bold">
+            <i class="fa-solid fa-child-reaching"></i>
           </div>
-        </div>
-
-        <ul class="mt-4 space-y-2 text-sm text-gray-600">
-          <li><i class="fa-solid fa-check text-emerald mr-2"></i>1 Premium Powder Jar</li>
-          <li><i class="fa-solid fa-check text-emerald mr-2"></i>Free posture guide</li>
-          <li><i class="fa-solid fa-check text-emerald mr-2"></i>Free Delivery across Pakistan</li>
-        </ul>
-
-        <div class="mt-auto">
-          <button class="w-full mt-6 gold-cta px-4 py-3 rounded-md font-bold" onclick="openModal('Starter Jar')">Buy Starter Jar</button>
-          <div class="mt-3 text-xs text-gray-500 text-center">JazzCash & Cash on Delivery</div>
-        </div>
-      </div>
-
-      <!-- Pack 2 - Most Popular -->
-      <div class="bg-white p-6 rounded-2xl border-2 border-emerald shadow-lg transform md:-translate-y-4">
-        <div class="flex items-center justify-between">
-          <div>
-            <h3 class="font-bold text-lg">Growth Accelerator</h3>
-            <p class="text-sm text-gray-500">2 Months Supply (2 Jars)</p>
-          </div>
-          <div class="text-right">
-            <div class="text-xs text-gray-400 line-through">PKR 6,000</div>
-            <div class="text-2xl font-extrabold text-navy">PKR 3,499</div>
-          </div>
-        </div>
-
-        <div class="mt-3">
-          <span class="inline-block bg-emerald text-white px-3 py-1 rounded-full text-xs font-semibold">MOST POPULAR — SAVE BIG</span>
-        </div>
-
-        <ul class="mt-4 space-y-2 text-sm text-gray-600">
-          <li><i class="fa-solid fa-check text-emerald mr-2"></i>2 Premium Powder Jars</li>
-          <li><i class="fa-solid fa-check text-emerald mr-2"></i>Free express delivery</li>
-          <li><i class="fa-solid fa-check text-emerald mr-2"></i>Priority WhatsApp support</li>
-        </ul>
-
-        <div class="mt-6">
-          <button class="w-full gold-cta px-4 py-3 rounded-md font-bold" onclick="openModal('Growth Accelerator')">Buy Growth Accelerator</button>
-        </div>
-      </div>
-
-      <!-- Pack 3 - Best Value -->
-      <div class="bg-white p-6 rounded-2xl border shadow-sm flex flex-col">
-        <div class="flex items-center justify-between">
-          <div>
-            <h3 class="font-bold text-lg">Max Height Bundle</h3>
-            <p class="text-sm text-gray-500">3 Months Supply (3 Jars)</p>
-          </div>
-          <div class="text-right">
-            <div class="text-xs text-gray-400 line-through">PKR 9,000</div>
-            <div class="text-2xl font-extrabold text-navy">PKR 4,899</div>
-          </div>
-        </div>
-
-        <div class="mt-3">
-          <span class="inline-block bg-gold text-navy px-3 py-1 rounded-full text-xs font-semibold">BEST VALUE — SAVE 45%</span>
-        </div>
-
-        <ul class="mt-4 space-y-2 text-sm text-gray-600">
-          <li><i class="fa-solid fa-check text-emerald mr-2"></i>3 Premium Powder Jars</li>
-          <li><i class="fa-solid fa-check text-emerald mr-2"></i>Free express delivery</li>
-          <li><i class="fa-solid fa-check text-emerald mr-2"></i>Dedicated coach access</li>
-        </ul>
-
-        <div class="mt-auto">
-          <button class="w-full mt-6 gold-cta px-4 py-3 rounded-md font-bold" onclick="openModal('Max Height Bundle')">Buy Max Bundle</button>
+          <h3 class="font-bold text-lg text-slate-900">Posture Correction</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Strengthens core spinal muscles, straightening hunchback posture for an instant 1–2 inch visual boost.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ORDER FORM MODAL -->
-  <div id="orderModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
-    <div class="w-full max-w-xl bg-white rounded-xl p-6 shadow-lg">
-      <div class="flex items-start justify-between">
-        <div>
-          <h3 class="text-xl font-bold text-navy">Confirm Your Order</h3>
-          <div class="text-sm text-gray-500">Cash on Delivery & JazzCash Available</div>
+  <!-- HOW POWDER WORKS SECTION -->
+  <section id="formula" class="py-16 bg-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="bg-dark-900 text-white rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-2xl">
+        <div class="grid lg:grid-cols-2 gap-8 items-center relative z-10">
+          <div class="space-y-4">
+            <span class="bg-brand-500/20 text-brand-400 font-bold text-xs uppercase px-3 py-1 rounded-full border border-brand-500/30">Simple Daily Routine</span>
+            <h2 class="font-display text-2xl sm:text-3xl font-extrabold">How To Consume The Elite Grow Powder</h2>
+            <p class="text-slate-300 text-sm leading-relaxed">No complicated diets or painful stretching machines needed. Consistency is the key to unlocking growth potential.</p>
+            
+            <div class="space-y-3 pt-2">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 bg-brand-600 text-white font-bold rounded-lg flex items-center justify-center shrink-0 text-sm">1</div>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Take 1 Scoop (Provided inside Jar)</h4>
+                  <p class="text-xs text-slate-400">Mix 1 scoop of powder into a warm glass of milk (or water).</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 bg-brand-600 text-white font-bold rounded-lg flex items-center justify-center shrink-0 text-sm">2</div>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Drink Once Daily (Night recommended)</h4>
+                  <p class="text-xs text-slate-400">Drink 30 minutes before sleep when natural growth hormones peak.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 bg-brand-600 text-white font-bold rounded-lg flex items-center justify-center shrink-0 text-sm">3</div>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Track Progress in 60-90 Days</h4>
+                  <p class="text-xs text-slate-400">Consistently use for 2 to 3 months for full transformation results.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-dark-800 border border-slate-700/60 p-6 rounded-2xl text-center space-y-4">
+            <i class="fa-solid fa-flask-vial text-brand-400 text-4xl"></i>
+            <h3 class="font-bold text-white text-lg">100% Safe & Natural Formula</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Formulated without synthetic steroids or harmful hormones. Suitable for teens, young men, and women aged 14 to 28.
+            </p>
+            <div class="inline-block bg-brand-500/10 text-brand-400 font-mono text-xs px-3 py-1.5 rounded-lg border border-brand-500/20">
+              GMP Certified Standard • Safe & Pure
+            </div>
+          </div>
         </div>
-        <button class="text-gray-500" onclick="closeModal()" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES & PRICING SECTION -->
+  <section id="packages" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <span class="text-brand-600 font-extrabold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full">Discounted Bundles</span>
+        <h2 class="font-display text-3xl font-extrabold text-dark-900">Select Your Growth Package</h2>
+        <p class="text-slate-600 text-sm sm:text-base">Free Delivery & Cash on Delivery Available All Over Pakistan</p>
       </div>
 
-      <form action="https://api.web3forms.com/submit" method="POST" id="orderForm" class="mt-4 space-y-3">
-        <input type="hidden" name="access_key" value="e783406d-26ef-4814-8663-71dfa8814850">
-        <input type="hidden" name="subject" value="New Order - The Elite Grow">
+      <div class="grid lg:grid-cols-3 gap-8 items-stretch">
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <input required id="fullName" name="fullName" placeholder="Full Name" class="w-full p-3 border rounded-md" />
-          <input required id="phone" name="phone" placeholder="Phone / WhatsApp Number" class="w-full p-3 border rounded-md" />
-        </div>
+        <!-- Package 1: Starter Jar -->
+        <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-shadow relative">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-slate-800 text-lg">1 Month Starter Jar</span>
+              <span class="bg-slate-200 text-slate-700 font-bold text-xs px-2.5 py-1 rounded-full">1 Powder Jar</span>
+            </div>
+            
+            <p class="text-xs text-slate-500">Perfect for trying out taste and beginning initial cartilage nourishment.</p>
 
-        <textarea required id="address" name="address" rows="2" placeholder="Full Delivery Address (City, Area, House #)" class="w-full p-3 border rounded-md"></textarea>
+            <div class="pt-2">
+              <div class="text-xs text-slate-400 line-through">PKR 3,000</div>
+              <div class="text-3xl font-extrabold text-dark-900">PKR 1,999</div>
+              <div class="text-xs text-brand-600 font-semibold mt-0.5">Save PKR 1,001 (33% OFF)</div>
+            </div>
 
-        <div class="flex gap-3 items-center">
-          <select id="packageSelect" name="package" class="p-3 border rounded-md w-full">
-            <option>Starter Jar (PKR 1,999)</option>
-            <option selected>Growth Accelerator (PKR 3,499)</option>
-            <option>Max Height Bundle (PKR 4,899)</option>
-          </select>
-        </div>
-
-        <!-- Payment Selection & Details -->
-        <div class="mt-2 p-3 bg-slatebg border rounded-md">
-          <label class="block text-sm font-bold text-navy mb-2">Select Payment Method:</label>
-          <div class="space-y-2">
-            <label class="flex items-center gap-2 cursor-pointer">
-              <input type="radio" name="payment" value="JazzCash" checked onclick="togglePaymentDetails('jazzcash')" class="form-radio text-emerald" />
-              <span class="text-sm font-semibold">JazzCash (Fast Shipping)</span>
-            </label>
-            <label class="flex items-center gap-2 cursor-pointer">
-              <input type="radio" name="payment" value="COD" onclick="togglePaymentDetails('cod')" class="form-radio text-emerald" />
-              <span class="text-sm font-semibold">Cash on Delivery (COD)</span>
-            </label>
+            <ul class="space-y-2.5 text-xs text-slate-600 pt-3 border-t border-slate-200">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> 1x 400g Powder Jar (30 Days)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> FREE Courier Shipping</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Cash on Delivery / JazzCash</li>
+            </ul>
           </div>
 
-          <!-- JazzCash Box -->
-          <div id="jazzcashDetails" class="mt-3 p-3 bg-emerald/10 border border-emerald/30 rounded text-xs text-navy">
-            <p class="font-bold text-sm">JazzCash Account Details:</p>
-            <p>Account Title: <strong>Muhammad Wajdan Chaudhry</strong></p>
-            <p>Account Number: <strong>03398033003</strong></p>
-            <p class="mt-1 text-gray-600">Please send payment and enter Transaction ID / screenshot note in address or WhatsApp us.</p>
+          <button onclick="selectPackage('Starter Jar (1 Powder Jar) - PKR 1,999')" 
+                  class="mt-8 w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 rounded-xl transition-all text-sm flex items-center justify-center gap-2">
+            Order Starter Jar
+          </button>
+        </div>
+
+        <!-- Package 2: Most Popular (Accelerator) -->
+        <div class="bg-white border-2 border-brand-500 rounded-3xl p-6 flex flex-col justify-between shadow-2xl pulse-glow relative transform lg:-translate-y-3">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-600 to-emerald-500 text-white text-xs font-black px-4 py-1 rounded-full uppercase tracking-wider shadow-md">
+            🔥 Most Popular Choice
           </div>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-slate-900 text-xl">2 Month Growth Bundle</span>
+              <span class="bg-brand-100 text-brand-800 font-bold text-xs px-2.5 py-1 rounded-full">2 Powder Jars</span>
+            </div>
+            
+            <p class="text-xs text-slate-500">Recommended for visible 1.5–3 inch height improvements and posture correction.</p>
+
+            <div class="pt-2">
+              <div class="text-xs text-slate-400 line-through">PKR 6,000</div>
+              <div class="text-4xl font-extrabold text-brand-700">PKR 3,499</div>
+              <div class="text-xs text-brand-600 font-semibold mt-0.5">Save PKR 2,501 (42% OFF)</div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-slate-700 pt-3 border-t border-slate-100 font-medium">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-600"></i> 2x 400g Powder Jars (60 Days)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-600"></i> FREE Express Delivery All Pak</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-600"></i> Free Posture Exercise Guide PDF</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-600"></i> Priority WhatsApp Support</li>
+            </ul>
+          </div>
+
+          <button onclick="selectPackage('Growth Accelerator (2 Powder Jars) - PKR 3,499')" 
+                  class="mt-8 w-full bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white font-extrabold py-4 rounded-xl shadow-lg shadow-brand-500/30 transition-all text-sm flex items-center justify-center gap-2">
+            Select 2 Month Bundle
+          </button>
         </div>
 
-        <div class="flex items-center justify-between gap-3 pt-2">
-          <button type="submit" class="w-full gold-cta px-4 py-3 rounded-md font-bold text-lg shadow">CONFIRM MY ORDER</button>
+        <!-- Package 3: Max Height Bundle -->
+        <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 flex flex-col justify-between hover:shadow-xl transition-shadow relative">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-slate-800 text-lg">3 Month Max Transformation</span>
+              <span class="bg-amber-100 text-amber-800 font-bold text-xs px-2.5 py-1 rounded-full">3 Powder Jars</span>
+            </div>
+            
+            <p class="text-xs text-slate-500">Maximum value for 90-day complete natural bone mineralization protocol.</p>
+
+            <div class="pt-2">
+              <div class="text-xs text-slate-400 line-through">PKR 9,000</div>
+              <div class="text-3xl font-extrabold text-dark-900">PKR 4,899</div>
+              <div class="text-xs text-amber-600 font-semibold mt-0.5">Save PKR 4,101 (45% OFF)</div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-slate-600 pt-3 border-t border-slate-200">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> 3x 400g Powder Jars (90 Days)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> FREE Express Courier Delivery</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Full Height Protocol & Support</li>
+            </ul>
+          </div>
+
+          <button onclick="selectPackage('Max Height Bundle (3 Powder Jars) - PKR 4,899')" 
+                  class="mt-8 w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 rounded-xl transition-all text-sm flex items-center justify-center gap-2">
+            Order Max Bundle
+          </button>
         </div>
 
-        <div id="orderMsg" class="text-sm text-gray-600 hidden mt-2">Processing...</div>
-      </form>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- mobile sticky CTA -->
-  <div class="mobile-cta fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-lg">
-    <button class="w-full flex items-center justify-center gap-3 gold-cta px-4 py-3 rounded-full font-bold shadow-lg" onclick="openModal('Growth Accelerator')">
-      <i class="fa-solid fa-cart-plus text-navy"></i> Order Now — PKR 1,999
-    </button>
-  </div>
+  <!-- CHECKOUT / ORDER FORM SECTION -->
+  <section id="checkoutSection" class="py-16 bg-slate-100">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-2xl p-6 sm:p-10 relative">
+        <div class="text-center space-y-2 mb-8">
+          <span class="bg-brand-100 text-brand-800 font-bold text-xs px-3 py-1 rounded-full uppercase">Instant Checkout</span>
+          <h2 class="font-display text-2xl sm:text-3xl font-black text-slate-900">Complete Your Delivery Details</h2>
+          <p class="text-xs sm:text-sm text-slate-500">Enter your address below. You will pay when receiving your parcel.</p>
+        </div>
+
+        <!-- WORKING WEB3FORMS ORDER FORM -->
+        <form action="https://api.web3forms.com/submit" method="POST" id="orderForm" class="space-y-5">
+          
+          <!-- Web3Forms Mandatory Access Key -->
+          <input type="hidden" name="access_key" value="e783406d-26ef-4814-8663-71dfa8814850">
+          <input type="hidden" name="subject" value="🚨 NEW ORDER: The Elite Grow Pakistan">
+          <input type="hidden" name="from_name" value="The Elite Grow Website">
+
+          <!-- Full Name -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1" for="fullName">Full Name <span class="text-red-500">*</span></label>
+            <div class="relative">
+              <i class="fa-solid fa-user absolute left-3.5 top-3.5 text-slate-400"></i>
+              <input type="text" id="fullName" name="Customer Name" required 
+                     placeholder="e.g. Muhammad Ali" 
+                     class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-brand-500 focus:bg-white transition-all" />
+            </div>
+          </div>
+
+          <!-- Phone Number -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1" for="phone">WhatsApp / Phone Number <span class="text-red-500">*</span></label>
+            <div class="relative">
+              <i class="fa-solid fa-phone absolute left-3.5 top-3.5 text-slate-400"></i>
+              <input type="tel" id="phone" name="Phone Number" required 
+                     placeholder="0300 1234567" 
+                     class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-brand-500 focus:bg-white transition-all" />
+            </div>
+            <p class="text-[11px] text-slate-400 mt-1">We will send tracking details on WhatsApp.</p>
+          </div>
+
+          <!-- Full Delivery Address -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1" for="address">Full Delivery Address (House #, Street, City) <span class="text-red-500">*</span></label>
+            <div class="relative">
+              <i class="fa-solid fa-location-dot absolute left-3.5 top-3.5 text-slate-400"></i>
+              <textarea id="address" name="Delivery Address" required rows="2" 
+                        placeholder="e.g. House 123, Street 4, Sector F-8/2, Islamabad" 
+                        class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-brand-500 focus:bg-white transition-all"></textarea>
+            </div>
+          </div>
+
+          <!-- Package Dropdown Select -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1" for="packageSelect">Selected Growth Package <span class="text-red-500">*</span></label>
+            <div class="relative">
+              <i class="fa-solid fa-box absolute left-3.5 top-3.5 text-slate-400"></i>
+              <select id="packageSelect" name="Selected Package" 
+                      class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:outline-none focus:border-brand-500 focus:bg-white transition-all appearance-none">
+                <option value="Starter Jar (1 Powder Jar) - PKR 1,999">1 Month Starter Jar — PKR 1,999</option>
+                <option value="Growth Accelerator (2 Powder Jars) - PKR 3,499" selected>2 Month Growth Bundle (2 Jars) — PKR 3,499 [MOST POPULAR]</option>
+                <option value="Max Height Bundle (3 Powder Jars) - PKR 4,899">3 Month Max Bundle (3 Jars) — PKR 4,899</option>
+              </select>
+              <i class="fa-solid fa-chevron-down absolute right-3.5 top-4 text-xs text-slate-400 pointer-events-none"></i>
+            </div>
+          </div>
+
+          <!-- Payment Options Box -->
+          <div class="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-3">
+            <label class="block text-xs font-extrabold text-slate-800 uppercase">Choose Payment Method:</label>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <!-- COD Option -->
+              <label class="flex items-center gap-3 p-3 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-brand-500 transition-all">
+                <input type="radio" name="Payment Method" value="Cash on Delivery (COD)" checked onclick="togglePaymentView('cod')" class="accent-brand-600 w-4 h-4" />
+                <div>
+                  <div class="text-xs font-bold text-slate-800">Cash on Delivery</div>
+                  <div class="text-[10px] text-slate-500">Pay cash when courier delivers</div>
+                </div>
+              </label>
+
+              <!-- JazzCash Option -->
+              <label class="flex items-center gap-3 p-3 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-brand-500 transition-all">
+                <input type="radio" name="Payment Method" value="JazzCash Advance" onclick="togglePaymentView('jazzcash')" class="accent-brand-600 w-4 h-4" />
+                <div>
+                  <div class="text-xs font-bold text-slate-800">JazzCash Transfer</div>
+                  <div class="text-[10px] text-slate-500">Fast VIP Dispatch</div>
+                </div>
+              </label>
+            </div>
+
+            <!-- JazzCash Details Banner -->
+            <div id="jazzcashDetails" class="hidden p-3.5 bg-emerald-50 border border-emerald-200 rounded-xl text-xs space-y-1.5 text-emerald-900">
+              <div class="font-bold flex items-center gap-1 text-emerald-800">
+                <i class="fa-solid fa-building-columns"></i> JazzCash Official Account Details:
+              </div>
+              <div class="flex justify-between border-b border-emerald-200/60 pb-1">
+                <span class="text-slate-600">Account Title:</span>
+                <span class="font-bold">Muhammad Wajdan Chaudhry</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-600">Account / Mobile #:</span>
+                <span class="font-bold font-mono text-sm">03398033003</span>
+              </div>
+              <p class="text-[10px] text-emerald-700 italic pt-1">
+                * After placing order, send screenshot on WhatsApp (+92 339 8033003) for immediate verification.
+              </p>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" id="submitBtn" 
+                  class="w-full bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white font-black py-4 rounded-xl shadow-xl shadow-brand-500/30 hover:scale-[1.01] transition-all text-base flex items-center justify-center gap-2">
+            <i class="fa-solid fa-lock"></i> CONFIRM MY ORDER NOW
+          </button>
+
+          <!-- Form Message Callback -->
+          <div id="formResponse" class="hidden p-4 rounded-xl text-center text-sm font-bold"></div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMER REVIEWS SECTION -->
+  <section id="reviews" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+        <span class="text-brand-600 font-extrabold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full">Real Results</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-dark-900">Customer Testimonials Across Pakistan</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-slate-50 border border-slate-200 rounded-2xl space-y-3">
+          <div class="flex items-center gap-1 text-amber-400 text-sm">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            “Mene 2 Jars order kiye thay. 2 months me Alhamdulillah 2 inches height ka difference mehsoos hua aur posture bhi bilkul seedha ho gaya.”
+          </p>
+          <div class="pt-2 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-800">Usman R. (Lahore)</span>
+            <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold">Verified Buyer</span>
+          </div>
+        </div>
+
+        <div class="p-6 bg-slate-50 border border-slate-200 rounded-2xl space-y-3">
+          <div class="flex items-center gap-1 text-amber-400 text-sm">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            “Best thing is it is in powder form. Milk me asaani se mix ho jata hai taste bhi chocolate jaisa acha hai. Highly recommended.”
+          </p>
+          <div class="pt-2 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-800">Hamza K. (Karachi)</span>
+            <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold">Verified Buyer</span>
+          </div>
+        </div>
+
+        <div class="p-6 bg-slate-50 border border-slate-200 rounded-2xl space-y-3">
+          <div class="flex items-center gap-1 text-amber-400 text-sm">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            “Fast delivery by COD in Rawalpindi. Packing was solid sealed jar. Very good customer service on WhatsApp.”
+          </p>
+          <div class="pt-2 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-800">Bilal M. (Rawalpindi)</span>
+            <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold">Verified Buyer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQS SECTION -->
+  <section id="faqs" class="py-16 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10">
+        <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-dark-900">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-3">
+        <details class="bg-white p-4 rounded-xl border border-slate-200 group">
+          <summary class="font-bold text-sm text-slate-800 cursor-pointer flex justify-between items-center list-none">
+            Is this powder safe to use? Any side effects?
+            <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-slate-400"></i></span>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Yes! It is 100% natural, organic bone nutrition powder containing essential minerals and vitamins. It has no chemicals or steroids and is completely side-effect free.
+          </p>
+        </details>
+
+        <details class="bg-white p-4 rounded-xl border border-slate-200 group">
+          <summary class="font-bold text-sm text-slate-800 cursor-pointer flex justify-between items-center list-none">
+            How many days does delivery take in Pakistan?
+            <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-slate-400"></i></span>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            We dispatch parcels via standard express courier. Delivery takes 2 to 4 working days anywhere in Pakistan.
+          </p>
+        </details>
+
+        <details class="bg-white p-4 rounded-xl border border-slate-200 group">
+          <summary class="font-bold text-sm text-slate-800 cursor-pointer flex justify-between items-center list-none">
+            What is the age limit for using this product?
+            <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-slate-400"></i></span>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            It is ideal for ages 14 to 28 years when bone growth plates remain responsive to specialized micronutrient stimulation.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer class="max-w-5xl mx-auto px-4 sm:px-6 pb-8 pt-8 border-t mt-12">
-    <div class="text-center text-sm text-gray-500">
-      <p class="font-bold text-navy">THE ELITE GROW PAKISTAN</p>
-      <p class="mt-1">For support, WhatsApp us at: +92 339 8033003</p>
-      <p class="mt-2 text-xs text-gray-400">Copyright © 2026 The Elite Grow. All Rights Reserved.</p>
+  <footer class="bg-dark-900 text-slate-400 py-10 border-t border-slate-800 text-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center space-y-4">
+      <div class="font-display font-extrabold text-xl text-white tracking-widest">THE ELITE GROW PAKISTAN</div>
+      <p class="max-w-md mx-auto text-slate-400">Official Heights Nutrition Store. For direct support, WhatsApp us at +92 339 8033003</p>
+      <div class="text-slate-500 pt-4 border-t border-slate-800">
+        © 2026 The Elite Grow. All Rights Reserved.
+      </div>
     </div>
   </footer>
 
+  <!-- MOBILE STICKY BOTTOM BAR -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 z-40 flex items-center justify-between gap-3 shadow-2xl">
+    <div>
+      <div class="text-[10px] text-slate-400 font-bold uppercase">Starter Jar</div>
+      <div class="text-base font-black text-brand-700">PKR 1,999</div>
+    </div>
+    <a href="#checkoutSection" class="bg-gradient-to-r from-brand-600 to-brand-500 text-white font-extrabold px-6 py-2.5 rounded-xl text-xs flex items-center gap-1.5 shadow-lg shadow-brand-500/20">
+      <i class="fa-solid fa-bolt"></i> ORDER NOW
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
   <script>
-    document.getElementById('mobileNavBtn').addEventListener('click', () => {
-      document.getElementById('mobileNav').classList.toggle('hidden');
+    // Mobile Nav Toggle
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
     });
 
-    function togglePaymentDetails(type) {
-      const jz = document.getElementById('jazzcashDetails');
-      if (type === 'jazzcash') {
-        jz.classList.remove('hidden');
+    // Package selection auto scroll
+    function selectPackage(pkgName) {
+      const selectElem = document.getElementById('packageSelect');
+      selectElem.value = pkgName;
+      document.getElementById('checkoutSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Toggle Payment Details
+    function togglePaymentView(method) {
+      const jazzBox = document.getElementById('jazzcashDetails');
+      if (method === 'jazzcash') {
+        jazzBox.classList.remove('hidden');
       } else {
-        jz.classList.add('hidden');
+        jazzBox.classList.add('hidden');
       }
     }
 
-    function openModal(selectedPackage) {
-      document.getElementById('orderModal').classList.remove('hidden');
-    }
-    function closeModal() {
-      document.getElementById('orderModal').classList.add('hidden');
-    }
+    // Timer Countdown (14:59)
+    (function() {
+      let duration = 14 * 60 + 59;
+      const display = document.getElementById('countdown');
+      setInterval(() => {
+        let minutes = Math.floor(duration / 60);
+        let seconds = duration % 60;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = minutes + ":" + seconds;
+        if (--duration < 0) duration = 14 * 60 + 59;
+      }, 1000);
+    })();
+
+    // Web3Forms AJAX Form Submission (No page redirect error)
+    const form = document.getElementById('orderForm');
+    const responseDiv = document.getElementById('formResponse');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting Order...';
+
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
+      })
+      .then(async (response) => {
+        let result = await response.json();
+        if (response.status == 200) {
+          responseDiv.classList.remove('hidden', 'bg-red-100', 'text-red-700');
+          responseDiv.classList.add('bg-emerald-100', 'text-emerald-800', 'border', 'border-emerald-300');
+          responseDiv.innerHTML = '🎉 <strong>ORDER PLACED SUCCESSFULLY!</strong><br>Thank you, ' + object['Customer Name'] + '. We will contact you at ' + object['Phone Number'] + ' for confirmation.';
+          form.reset();
+        } else {
+          responseDiv.classList.remove('hidden', 'bg-emerald-100', 'text-emerald-800');
+          responseDiv.classList.add('bg-red-100', 'text-red-700', 'border', 'border-red-300');
+          responseDiv.innerHTML = '⚠️ Error: ' + result.message;
+        }
+      })
+      .catch(error => {
+        responseDiv.classList.remove('hidden', 'bg-emerald-100', 'text-emerald-800');
+        responseDiv.classList.add('bg-red-100', 'text-red-700', 'border', 'border-red-300');
+        responseDiv.innerHTML = '⚠️ Network Error. Please contact us directly on WhatsApp (+92 339 8033003).';
+      })
+      .then(function() {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fa-solid fa-lock"></i> CONFIRM MY ORDER NOW';
+      });
+    });
   </script>
 </body>
 </html>
